@@ -2,9 +2,14 @@
 
 const writeCards = (names) => {
   const messages = [];
-  names.map((name) => {
-    messages.push(`Thank you, ${name}, for the wonderful surprise gift!`);
-  });
+  //   names.map((name) => {
+  //     messages.push(`Thank you, ${name}, for the wonderful surprise gift!`);
+  //   });
+
+  for (let i = 0; i < names.length; i++) {
+    messages.push(`Thank you, ${names[i]}, for the wonderful surprise gift!`);
+  }
+
   console.log(messages);
   return messages;
 };
